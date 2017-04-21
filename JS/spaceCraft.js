@@ -133,7 +133,7 @@ $(document).ready(function(){
         $("#asteroid"+i).css({"top":800, "left":randomLeftDown});
         //$("#asteroid"+i).css({"top":, "left":});
 
-      },4000);
+      },5000);
   });
 
 });

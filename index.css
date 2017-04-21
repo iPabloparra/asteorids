@@ -1,0 +1,168 @@
+body {
+  overflow-x: hidden;
+  background-image: url(img/espacio.jpg);
+}
+
+
+.box-space {
+  /*background-color: black;*/
+  border: 1px solid #FFF;
+  width: 800px;
+  height:700px;
+  margin-left: 100px;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+}
+
+aside {
+  /*background-color: #8D4F4F;*/
+  border: 1px solid #FFF;
+  width:415px;
+  height:700px;
+  display: inline-block;
+}
+
+.boxes-aside  {
+  /*background-color: #D5CBCB;*/
+  border: 1px solid #FFF;
+  width: 294px;
+  height: 75px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 58px;
+}
+
+.btn-start {
+  background-color: black;
+  border: 1px solid #FFF;
+  width: 294px;
+  height: 75px;
+  margin-top:350px;
+  margin-left: 58px;
+  font-size: 20px;
+  color: white;
+  font-family: "Pixeled";
+
+
+}
+#craft {
+  width: 70px;
+  height: 100px;
+  /*background-color: #fff;*/
+  background-image: url(img/spacecraft46x85.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(1deg);
+}
+
+#bulletHolder{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: -10px;
+}
+
+.asteroid {
+  width: 100px;
+  position: absolute;
+  /*display: inline;*/
+  height: 100px;
+  background-image: url(img/asteroid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*position:relative;*/
+  animation: oblicuo 20s;
+  /*top:0px;
+  left: 0px;*/
+  /*animation: rotar 9s infinite;*/
+}
+.asteroid2 {
+  width: 100px;
+  position: absolute;
+  /*display: inline;*/
+  height: 100px;
+  background-image: url(img/asteroid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*position:relative;*/
+  animation: oblicuo2 20s;
+  top:700px;
+  left: 600px;
+  /*animation: rotar 9s infinite;*/
+}
+
+.asteroid3 {
+  width: 100px;
+  position: absolute;
+  /*display: inline;*/
+  height: 100px;
+  background-image: url(img/asteroid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*position:relative;*/
+  animation: oblicuo2 20s;
+  top:700px;
+  left:0px;
+  /*animation: rotar 9s infinite;*/
+}
+
+
+
+@keyframes oblicuo {
+  0% {transform: translate(0,0);}
+  100% {transform: translate(900px,800px);
+  }
+}
+
+@keyframes oblicuo2 {
+  0% {transform: translate(800,700);}
+  100% {transform: translate(-900px,-800px);
+  }
+}
+@keyframes oblicuo3 {
+  0% {transform: translate(700,0);}
+  100% {transform: translate(-900px,800px);
+  }
+}
+
+
+
+.bullet {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 2px;
+  height: 2px;
+  border: solid 1px red;
+}
+
+#player {
+  /*background-color:#D5CBCB;*/
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  margin-left: 58px;
+  font-family: "Pixeled";
+  color: white;
+}
+
+#score {
+  /*background-color:#D5CBCB;*/
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: -25px;
+  margin-left: 60px;
+  font-family: "Pixeled";
+  color: white;
+}
+
+@font-face {
+    font-family: "Pixeled";
+    /*src: url(../Game/Pixeled.ttf) format("truetype");*/
+
+
+}
